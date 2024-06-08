@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Boat Zadar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #006699;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #006699;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #006699;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hero {
+            background: url('zadar-boat.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .services, .contact, .about {
+            margin: 40px 0;
+        }
+        .services h2, .contact h2, .about h2 {
+            border-bottom: 2px solid #006699;
+            display: inline-block;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact form input[type="submit"] {
+            background-color: #006699;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rent a Boat Zadar</h1>
+        <p>Your adventure starts here!</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        Explore the Adriatic with us!
+    </div>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Located in the beautiful city of Zadar, Croatia, we offer a wide range of boats for rent. Whether you're looking for a small boat for a day trip or a larger yacht for a week-long adventure, we have the perfect vessel for you. Our team is dedicated to providing excellent service and ensuring your experience on the water is unforgettable.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Boat rentals (daily, weekly)</li>
+                <li>Skipper services</li>
+                <li>Fishing equipment rental</li>
+                <li>Customized boat tours</li>
+                <li>Snorkeling gear rental</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rent a Boat Zadar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
